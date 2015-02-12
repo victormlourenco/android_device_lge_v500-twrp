@@ -43,11 +43,11 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 # Kernel
 # Prebuilt kernel - uncomment line below to use prebuilt kernel
-#TARGET_PREBUILT_KERNEL := device/lge/v500/kernel
+TARGET_PREBUILT_KERNEL := device/lge/v500/kernel
 # Try to build the kernel
 # else uncomment below to build from source
-TARGET_KERNEL_SOURCE := kernel/lge/v500
-TARGET_KERNEL_CONFIG := cyanogenmod_v500_defconfig
+# TARGET_KERNEL_SOURCE := kernel/lge/v500
+# TARGET_KERNEL_CONFIG := cyanogenmod_v500_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672
@@ -70,7 +70,7 @@ TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_TIMEOUT := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_SUPPRESS_SECURE_ERASE := true
-TW_INCLUDE_L_CRYPTO := true
+TW_INCLUDE_L_CRYPTO := false
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_NO_SELECT_BUTTON := true
